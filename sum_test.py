@@ -1,3 +1,6 @@
+import pytest
+from sum import *
+
 @pytest.mark.parametrize('numbers, output', [
     ([1, 2, 3], 6),
     ([1, 2, 3, 4, 5], 15)
