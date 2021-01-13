@@ -3,7 +3,10 @@ from sum import *
 
 @pytest.mark.parametrize('numbers, output', [
     ([1, 2, 3], 6),
-    ([1, 2, 3, 4, 5], 15)
+    ([1, 2, 3, 4, 5], 15),
+    ([1, 2, 5], 10),
+    ([1, 2, 3, 4, 5, 9], 24),
+    ([1, 2, 3, 4, 5, 9, 3], 27)
     # Ajoutez des tests pour que la somme des éléments de la liste soit égale à 10, 24 et 27
 ])
 def test_mysum(numbers, output):
